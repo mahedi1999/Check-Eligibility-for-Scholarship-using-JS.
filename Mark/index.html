@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scholarship</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Scholarship</h1>
+            <hr>
+    </header>
+    <section>
+            <form action="" method="POST" autocomplete="on">
+                <fieldset>
+                    <legend>Eligibility Test</legend>
+                    <input type="text" name="id" placeholder="ID">
+                    <input type="text" name="name" placeholder="Name">
+                    <select id="section" name="section">
+                        <option selected disabled>Section</option>
+                        <option value="1">SSC/Dakhil/O-level</option>
+                        <option value="2">HSC/Alim/A-level</option>
+                    </select>
+                    <input type="text" id="batch" name="batch" placeholder="Batch">
+                    <input type="text" id="overallCgpa" name="overallCgpa" placeholder="Overall CGPA">
+                    <input type="text" id="currentCgpa" name="currentCgpa" placeholder="Current CGPA">
+                        <div class="campus">
+                            <h4>Campus</h4>
+                            <div class="radio">
+                                <input type="radio" id="main" name="campus" value="Main">
+                                <label for="main">Main</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="parmanent" name="campus" value="Parmanent">
+                                <label for="parmanent">Parmanent</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="uttara" name="campus" value="Uttara">
+                                <label for="uttara">Uttara</label>
+                            </div>
+                        </div>
+                    <input type="date" name="Date" placeholder="Date" value="date"> <br>
+                    <div class="checkbox">
+                        <input type="checkbox" id="freedomfighter"><label for="freedomfighter">I'm a Children of Freedom Fighter</label> 
+                    </div>
+                    <div class="btn">
+                        <button type="button" onclick="eligible()">Submit</button>
+                        <p id="output"></p>
+                    </div>
+                </fieldset>
+            </form>
+    </section>
+    </div>
+    <script src="mahedi.js"></script>
+</body>
+</html>
